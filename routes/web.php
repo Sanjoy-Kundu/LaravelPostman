@@ -24,7 +24,11 @@ Route::post('/form/post', [PostmanController::class, "submit"]);
 
 
 
-//web.php theke api dekhar jonno api/name likte hobei and sumit name method create kore postman diye data check korbo 
-Route::post('/api/from/post', [ApiController::class, "submit2"]);
 
+
+
+/*  
+|web.php theke api dekhar jonno api/name likte hobei and sumit name method create kore postman diye data check korbo
+*/
+Route::post('/api/from/post', [ApiController::class, "submit2"]);
 //notes: amra jodi api.php theke method call kori tahole amader route er first e '/api lekha lagbo na o by default dhore nibo and VerfifyCsrfToken.php teo kicu kora logbo na. now lets check api.php

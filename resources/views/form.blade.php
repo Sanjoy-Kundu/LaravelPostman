@@ -9,7 +9,7 @@
   <body>
     <h1>Hello, world!</h1>
     <div class="container">
-        <form action="/form/post" method="post">
+        <form action="/form/post" method="post" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
                 <label for="formGroupExampleInput" class="form-label">Name</label>
@@ -18,6 +18,10 @@
               <div class="mb-3">
                 <label for="formGroupExampleInput2" class="form-label">Email</label>
                 <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Email" name="email">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Email</label>
+                <input type="file" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Email" name="image">
               </div>
               <div class="mb-3">
                 <button class="btn btn-primary">SUBMIT</button>
